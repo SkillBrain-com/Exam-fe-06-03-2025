@@ -2,6 +2,7 @@ import React from "react";
 import MentorNotes from "./pages/mentor/AddNotes";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import AddNote from "./pages/mentor/AddNote";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <h1>Note App</h1>
         <Routes>
           <Route path='/' element={<MentorNotes />} />
-          {/* Add your route here */}
+          {AddNote}
         </Routes>
       </div>
     </Router>

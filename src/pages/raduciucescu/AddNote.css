@@ -1,0 +1,29 @@
+.title-input {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  border-color: #ced4da;
+  border: 1px solid;
+  color: #6c757d;
+}
+
+.content-input {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  border-color: #ced4da;
+  border-style: solid;
+  color: #6c757d;
+}
+.submit-button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #0496ff;
+}
+.submit-button:hover {
+  background-color: #a2d6f9;
+}

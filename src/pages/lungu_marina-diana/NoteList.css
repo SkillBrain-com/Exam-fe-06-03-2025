@@ -1,0 +1,36 @@
+.notes-container {
+  display: grid;
+  row-gap: 20px;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notes-container:empty {
+  padding: 0;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--lightGray);
+  padding: 10px;
+  border: var(--border);
+  box-shadow: none;
+}
+
+ .note h3 {
+  padding-bottom: 4px;
+  border-bottom: var(--border);
+}
+
+.note h3, .note p {
+  color: var(--darkestPurple);
+  padding-left: 4px;
+}
+
+
+
+

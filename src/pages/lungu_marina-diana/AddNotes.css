@@ -1,0 +1,27 @@
+:root {
+  --background: #ebeaeb;
+  --border: 1px solid var(--black);
+  --white: #fff;
+  --black: #000;
+  --gray: #555454;
+  --lightGray: #f9efff;
+  --darkestPurple: #371d39;
+  --darkPurple: #4e2951;
+  --mediumPurple: #6a3a6e;
+  --lightPurple: #800080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.App h1 {
+  color: var(--darkPurple);
+  margin-bottom: 30px;
+}
+

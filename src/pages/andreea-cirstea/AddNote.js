@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import NoteCard from "../../components/NoteCard.js";
 import AddNotes from "./AddNotes.js";
 
-function AddNote()  {
+function AddNote({onAddNote})  {
   const [notes, setNotes] = useState([]);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (title.trim() && content.trim()) {
-      setNotes([...notes, { title, content }]);
-      setTitle("");
-      setContent("");
-    }
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (title.trim() && content.trim()) {
+    onAddNote(title, content);
+    setTitle("");
+    setContent("");
+  }
+};
+
 
   return (
    <div style= {{maxWidth: "600px", margin: "40px auto", padding: "20px", borderRadius: "10px", boxShadow: "0px 4px 10px rgba(0,0,0,0.1)", background: "#A3D6A5"}}>
